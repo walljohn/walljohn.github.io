@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Carrie Tedford</title>
+<meta name="description" content="Carrie Tedford is the maker behind Tedford Fabrication in Gananoque, Ontario — an OCAD University-trained artist with a background in paint, coatings and kitchen and bath design.">
+<meta property="og:title" content="About Carrie Tedford — Tedford Fabrication">
+<meta property="og:description" content="OCAD-trained artist and maker behind Tedford Fabrication's rattan weaving, restoration, decorating and metal work in Gananoque, Ontario.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ivory:#F3EEE3; --ivory-deep:#E9E1D0; --paper-line:#DBD0B8;
+    --charcoal:#26241F; --charcoal-soft:#514C41;
+    --olive:#6B6B45; --olive-deep:#4E4E30;
+    --rattan:#A97C46; --rattan-soft:#C9A06A;
+    --focus:#A97C46;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ivory:#211F1A; --ivory-deep:#2A2721; --paper-line:#3C3729;
+      --charcoal:#F1EBDC; --charcoal-soft:#CBC2AB;
+      --olive:#B4B481; --olive-deep:#D6D6A0;
+      --rattan:#D3A465; --rattan-soft:#E7C695;
+      --focus:#D3A465;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ivory:#211F1A; --ivory-deep:#2A2721; --paper-line:#3C3729;
+    --charcoal:#F1EBDC; --charcoal-soft:#CBC2AB;
+    --olive:#B4B481; --olive-deep:#D6D6A0;
+    --rattan:#D3A465; --rattan-soft:#E7C695;
+    --focus:#D3A465;
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; } }
+  body{ margin:0; background:var(--ivory); color:var(--charcoal); font-family:'Archivo',system-ui,-apple-system,sans-serif; font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased; }
+  a{ color:inherit; }
+  img,svg{ max-width:100%; display:block; }
+  .wrap{ max-width:1180px; margin-inline:auto; padding-inline:clamp(1.25rem,4vw,3rem); }
+  .skip-link{ position:absolute; left:-999px; top:0; background:var(--charcoal); color:var(--ivory); padding:0.75rem 1.25rem; z-index:200; text-decoration:none; font-weight:600; }
+  .skip-link:focus{ left:1rem; top:1rem; }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible{ outline:3px solid var(--focus); outline-offset:2px; }
+
+  h1,h2,h3{ font-family:'Fraunces',Georgia,serif; color:var(--charcoal); text-wrap:balance; margin:0; }
+  h1{ font-size:clamp(2.4rem,5vw,3.6rem); font-weight:600; line-height:1.05; letter-spacing:-0.01em; }
+  h2{ font-size:clamp(1.6rem,2.8vw,2.1rem); font-weight:600; line-height:1.15; }
+  h3{ font-size:1.1rem; font-weight:700; }
+  .eyebrow{ font-family:'Archivo',sans-serif; text-transform:uppercase; letter-spacing:0.14em; font-size:0.76rem; font-weight:700; color:var(--olive-deep); display:inline-block; }
+  p{ margin:0; }
+  p.lede{ font-size:1.15rem; color:var(--charcoal-soft); max-width:56ch; }
+  .prose p + p{ margin-top:1.15rem; }
+  .prose p{ max-width:64ch; color:var(--charcoal-soft); font-size:1.05rem; }
+
+  header.site-header{ position:relative; border-bottom:1px solid var(--paper-line); background:var(--ivory); }
+  header.site-header .wrap{ display:flex; align-items:center; justify-content:space-between; padding-block:1.1rem; gap:1.25rem 2rem; flex-wrap:wrap; }
+  .wordmark{ font-family:'Fraunces',serif; font-weight:600; font-size:1.3rem; letter-spacing:-0.01em; text-decoration:none; color:var(--charcoal); }
+  .wordmark span{ color:var(--olive); }
+  nav.main-nav{ display:flex; gap:1.6rem; align-items:center; flex-wrap:wrap; }
+  nav.main-nav a{ font-weight:600; font-size:0.92rem; text-decoration:none; color:var(--charcoal-soft); padding-block:0.3rem; border-bottom:2px solid transparent; }
+  nav.main-nav a:hover{ color:var(--charcoal); border-color:var(--rattan); }
+  nav.main-nav a[aria-current="page"]{ color:var(--charcoal); border-color:var(--olive); }
+  .header-phone{ font-weight:700; font-size:0.92rem; color:var(--olive-deep); text-decoration:none; white-space:nowrap; }
+  .header-phone:hover{ text-decoration:underline; }
+
+  .btn{ display:inline-flex; align-items:center; gap:0.55rem; font-family:'Archivo',sans-serif; font-weight:700; font-size:0.96rem; padding:0.85rem 1.6rem; border-radius:3px; text-decoration:none; border:1.5px solid transparent; transition:background-color .15s ease,color .15s ease,border-color .15s ease; }
+  .btn-primary{ background:var(--charcoal); color:var(--ivory); }
+  .btn-primary:hover{ background:var(--olive-deep); color:var(--ivory); }
+  .btn-outline{ border-color:var(--charcoal); color:var(--charcoal); background:transparent; }
+  .btn-outline:hover{ border-color:var(--olive); color:var(--olive-deep); background:rgba(107,107,69,0.08); }
+  .cta-row{ display:flex; gap:1rem; flex-wrap:wrap; margin-top:2.1rem; }
+
+  section{ padding-block:clamp(2.75rem,6vw,5rem); }
+  .page-header{ border-bottom:1px solid var(--paper-line); }
+  .section-dark{ background:var(--charcoal); color:var(--ivory); }
+  .section-dark h2,.section-dark h3{ color:var(--ivory); }
+  .section-dark .eyebrow{ color:var(--rattan-soft); }
+  .section-dark p{ color:#D8D0BC; }
+
+  .about-grid{ display:grid; grid-template-columns:1fr 320px; gap:clamp(2rem,5vw,4rem); align-items:start; }
+  @media (max-width:860px){ .about-grid{ grid-template-columns:1fr; } }
+
+  .pull-quote{ font-family:'Fraunces',serif; font-style:italic; font-weight:500; font-size:clamp(1.5rem,3vw,2rem); color:var(--olive-deep); line-height:1.35; margin-block:2.5rem; max-width:36ch; border-left:3px solid var(--rattan); padding-left:1.5rem; }
+  .pull-quote cite{ display:block; font-family:'Archivo',sans-serif; font-style:normal; font-size:0.85rem; font-weight:600; color:var(--charcoal-soft); margin-top:0.6rem; }
+
+  .creator-word{ font-family:'Fraunces',serif; font-style:italic; font-weight:500; font-size:clamp(2.5rem,6vw,4rem); color:var(--olive); line-height:1; }
+
+  .facts-card{ background:var(--ivory-deep); border:1px solid var(--paper-line); border-radius:4px; padding:1.75rem; position:sticky; top:1.5rem; }
+  .facts-card h3{ text-transform:uppercase; letter-spacing:0.08em; font-size:0.82rem; color:var(--olive-deep); font-family:'Archivo',sans-serif; margin-bottom:1rem; }
+  .facts-card dl{ margin:0; display:flex; flex-direction:column; gap:1rem; }
+  .facts-card dt{ font-weight:700; font-size:0.82rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--charcoal-soft); }
+  .facts-card dd{ margin:0.15rem 0 0; font-size:0.98rem; }
+  .facts-card hr{ border:none; border-top:1px solid var(--paper-line); margin:0; }
+
+  .weave-a{ fill:var(--rattan-soft); }
+  .weave-b{ fill:var(--olive); }
+  .weave-base{ fill:var(--ivory-deep); }
+  .texture-strip{ height:64px; border-radius:4px; overflow:hidden; border:1px solid var(--paper-line); margin-block:3rem; }
+
+  footer.site-footer{ background:var(--charcoal); color:var(--ivory); padding-block:3.5rem 2rem; }
+  footer.site-footer a{ color:var(--ivory); text-decoration:none; }
+  footer.site-footer a:hover{ text-decoration:underline; }
+  .footer-grid{ display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:2.5rem; }
+  @media (max-width:700px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  .footer-grid h3{ color:var(--rattan-soft); font-size:0.95rem; font-family:'Archivo',sans-serif; text-transform:uppercase; letter-spacing:0.1em; font-weight:700; margin-bottom:0.9rem; }
+  .footer-grid p, .footer-grid li{ color:#D8D0BC; font-size:0.95rem; }
+  .footer-grid ul{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.5rem; }
+  .footer-bottom{ margin-top:2.75rem; padding-top:1.5rem; border-top:1px solid rgba(243,238,227,0.15); font-size:0.85rem; color:#B9AE8E; display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.6rem; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Tedford <span>Fabrication</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-phone" href="tel:+16132178217">613-217-8217</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-header">
+    <div class="wrap">
+      <span class="eyebrow">About</span>
+      <h1 style="margin-top:0.75rem;">Carrie Tedford</h1>
+      <p class="lede" style="margin-top:1.1rem;">Curator-trained, trade-tested, and raised in Gananoque.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap about-grid">
+      <div>
+        <div class="prose">
+          <p>Carrie Tedford has been drawn to colour and to making things for as long as she can remember. Those instincts eventually became a business built entirely around hands-on craft.</p>
+          <p>In 2006, she graduated from OCAD University in Toronto with a Bachelor of Fine Arts in Curatorial Practices and Criticism. Afterward, she spent more than nine years working in building-material retail, inside the paint-and-coatings and kitchen-and-bath design departments — practical, hands-on product knowledge that now underpins the restoration, refinishing, and decorating work she does today.</p>
+        </div>
+
+        <blockquote class="pull-quote">
+          &ldquo;I love seeing someone's house become their home.&rdquo;
+          <cite>— Carrie Tedford</cite>
+        </blockquote>
+
+        <div class="prose">
+          <p>Her visual arts practice runs wider than furniture and interiors: personal board and canvas paintings, smaller residential wall murals, and work on large-scale theatre scenery all sit alongside the weaving, restoration, and finishing work that make up Tedford Fabrication.</p>
+          <p>Apart from her years in Toronto at OCAD, Carrie was born and raised in Gananoque, and returned to build her business here — in a town she describes as offering "a wonderous landscape that whole heartedly endorses the best of all seasons," within easy reach of Ottawa, Toronto, and the U.S. border.</p>
+        </div>
+
+        <div class="texture-strip" role="img" aria-label="Decorative woven rattan texture">
+          <svg viewBox="0 0 800 64" preserveAspectRatio="none" width="100%" height="100%">
+            <defs>
+              <pattern id="weaveStrip" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <rect class="weave-base" width="40" height="40"/>
+                <rect class="weave-a" y="2" width="40" height="12" opacity="0.6"/>
+                <rect class="weave-b" y="22" width="40" height="12" opacity="0.45"/>
+              </pattern>
+            </defs>
+            <rect width="800" height="64" fill="url(#weaveStrip)"/>
+          </svg>
+        </div>
+
+        <div class="prose">
+          <p><span class="creator-word">Creator.</span></p>
+          <p style="margin-top:1rem;">It's the single word Carrie uses to sum up Tedford Fabrication — because no shorter list captures weaving, restoration, paint, and metal all coming out of the same studio.</p>
+        </div>
+      </div>
+
+      <aside class="facts-card" aria-label="Background at a glance">
+        <h3>Background</h3>
+        <dl>
+          <div>
+            <dt>Education</dt>
+            <dd>BFA, Curatorial Practices &amp; Criticism<br>OCAD University, 2006</dd>
+          </div>
+          <hr>
+          <div>
+            <dt>Trade experience</dt>
+            <dd>9+ years in building-material retail — paint &amp; coatings, kitchen &amp; bath design</dd>
+          </div>
+          <hr>
+          <div>
+            <dt>Visual arts practice</dt>
+            <dd>Canvas &amp; board painting, residential murals, theatre scenery</dd>
+          </div>
+          <hr>
+          <div>
+            <dt>Studio location</dt>
+            <dd>Gananoque, Ontario</dd>
+          </div>
+          <hr>
+          <div>
+            <dt>Craft areas</dt>
+            <dd>Rattan weaving · Furniture restoration · Decorating &amp; painting · Metalwork</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section-dark">
+    <div class="wrap">
+      <span class="eyebrow">Work with Carrie</span>
+      <h2 style="margin-top:0.75rem; max-width:24ch;">Every project is hers, start to finish</h2>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="contact.html#inquiry-form">Discuss Your Project</a>
+        <a class="btn btn-outline" style="border-color:var(--ivory); color:var(--ivory);" href="tel:+16132178217">Call 613-217-8217</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h3>Tedford Fabrication</h3>
+      <p>175 Oak Street<br>Gananoque, ON K7G 2R3<br>Contact address — by appointment only.</p>
+    </div>
+    <div>
+      <h3>Get in touch</h3>
+      <ul>
+        <li><a href="tel:+16132178217">613-217-8217</a></li>
+        <li><a href="mailto:tedfordfabrication@gmail.com">tedfordfabrication@gmail.com</a></li>
+        <li><a href="https://www.facebook.com/TedfordFab/">Facebook</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Site</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Tedford Fabrication</span>
+    <span>Gananoque, Ontario</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

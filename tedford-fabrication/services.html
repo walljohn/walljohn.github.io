@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Tedford Fabrication</title>
+<meta name="description" content="Rattan and hand weaving, furniture restoration and refinishing, decorating and painting, and metal railing repair — the confirmed services offered by Tedford Fabrication in Gananoque, Ontario.">
+<meta property="og:title" content="Services — Tedford Fabrication">
+<meta property="og:description" content="Rattan weaving, furniture restoration, decorating and painting, and metal railing repair in Gananoque, Ontario.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ivory:#F3EEE3; --ivory-deep:#E9E1D0; --paper-line:#DBD0B8;
+    --charcoal:#26241F; --charcoal-soft:#514C41;
+    --olive:#6B6B45; --olive-deep:#4E4E30;
+    --rattan:#A97C46; --rattan-soft:#C9A06A;
+    --focus:#A97C46;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ivory:#211F1A; --ivory-deep:#2A2721; --paper-line:#3C3729;
+      --charcoal:#F1EBDC; --charcoal-soft:#CBC2AB;
+      --olive:#B4B481; --olive-deep:#D6D6A0;
+      --rattan:#D3A465; --rattan-soft:#E7C695;
+      --focus:#D3A465;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ivory:#211F1A; --ivory-deep:#2A2721; --paper-line:#3C3729;
+    --charcoal:#F1EBDC; --charcoal-soft:#CBC2AB;
+    --olive:#B4B481; --olive-deep:#D6D6A0;
+    --rattan:#D3A465; --rattan-soft:#E7C695;
+    --focus:#D3A465;
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; } }
+  body{ margin:0; background:var(--ivory); color:var(--charcoal); font-family:'Archivo',system-ui,-apple-system,sans-serif; font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased; }
+  a{ color:inherit; }
+  img,svg{ max-width:100%; display:block; }
+  .wrap{ max-width:1180px; margin-inline:auto; padding-inline:clamp(1.25rem,4vw,3rem); }
+  .skip-link{ position:absolute; left:-999px; top:0; background:var(--charcoal); color:var(--ivory); padding:0.75rem 1.25rem; z-index:200; text-decoration:none; font-weight:600; }
+  .skip-link:focus{ left:1rem; top:1rem; }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible{ outline:3px solid var(--focus); outline-offset:2px; }
+
+  h1,h2,h3{ font-family:'Fraunces',Georgia,serif; color:var(--charcoal); text-wrap:balance; margin:0; }
+  h1{ font-size:clamp(2.4rem,5vw,3.6rem); font-weight:600; line-height:1.05; letter-spacing:-0.01em; }
+  h2{ font-size:clamp(1.7rem,3vw,2.2rem); font-weight:600; line-height:1.15; }
+  h3{ font-size:1.4rem; font-weight:600; }
+  .eyebrow{ font-family:'Archivo',sans-serif; text-transform:uppercase; letter-spacing:0.14em; font-size:0.76rem; font-weight:700; color:var(--olive-deep); display:inline-block; }
+  p{ margin:0; }
+  p.lede{ font-size:1.15rem; color:var(--charcoal-soft); max-width:56ch; }
+  .prose p + p{ margin-top:1.1rem; }
+  .prose p{ max-width:65ch; color:var(--charcoal-soft); }
+  ul.plain{ margin:0.9rem 0 0; padding-left:1.2rem; color:var(--charcoal-soft); max-width:60ch; }
+  ul.plain li + li{ margin-top:0.5rem; }
+
+  header.site-header{ position:relative; border-bottom:1px solid var(--paper-line); background:var(--ivory); }
+  header.site-header .wrap{ display:flex; align-items:center; justify-content:space-between; padding-block:1.1rem; gap:1.25rem 2rem; flex-wrap:wrap; }
+  .wordmark{ font-family:'Fraunces',serif; font-weight:600; font-size:1.3rem; letter-spacing:-0.01em; text-decoration:none; color:var(--charcoal); }
+  .wordmark span{ color:var(--olive); }
+  nav.main-nav{ display:flex; gap:1.6rem; align-items:center; flex-wrap:wrap; }
+  nav.main-nav a{ font-weight:600; font-size:0.92rem; text-decoration:none; color:var(--charcoal-soft); padding-block:0.3rem; border-bottom:2px solid transparent; }
+  nav.main-nav a:hover{ color:var(--charcoal); border-color:var(--rattan); }
+  nav.main-nav a[aria-current="page"]{ color:var(--charcoal); border-color:var(--olive); }
+  .header-phone{ font-weight:700; font-size:0.92rem; color:var(--olive-deep); text-decoration:none; white-space:nowrap; }
+  .header-phone:hover{ text-decoration:underline; }
+
+  .btn{ display:inline-flex; align-items:center; gap:0.55rem; font-family:'Archivo',sans-serif; font-weight:700; font-size:0.96rem; padding:0.85rem 1.6rem; border-radius:3px; text-decoration:none; border:1.5px solid transparent; transition:background-color .15s ease,color .15s ease,border-color .15s ease; }
+  .btn-primary{ background:var(--charcoal); color:var(--ivory); }
+  .btn-primary:hover{ background:var(--olive-deep); color:var(--ivory); }
+  .btn-outline{ border-color:var(--charcoal); color:var(--charcoal); background:transparent; }
+  .btn-outline:hover{ border-color:var(--olive); color:var(--olive-deep); background:rgba(107,107,69,0.08); }
+  .cta-row{ display:flex; gap:1rem; flex-wrap:wrap; margin-top:2.1rem; }
+
+  section{ padding-block:clamp(2.75rem,6vw,5rem); }
+  .page-header{ border-bottom:1px solid var(--paper-line); }
+  .section-alt{ background:var(--ivory-deep); }
+  .section-dark{ background:var(--charcoal); color:var(--ivory); }
+  .section-dark h2,.section-dark h3{ color:var(--ivory); }
+  .section-dark .eyebrow{ color:var(--rattan-soft); }
+  .section-dark p{ color:#D8D0BC; }
+
+  .weave-a{ fill:var(--rattan-soft); }
+  .weave-b{ fill:var(--olive); }
+  .weave-base{ fill:var(--ivory-deep); }
+  .ic-line{ stroke:var(--olive-deep); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+
+  .service-group{ display:grid; grid-template-columns:96px 1fr; gap:2rem; padding-block:3rem; border-top:1px solid var(--paper-line); scroll-margin-top:2rem; }
+  .service-group:last-child{ border-bottom:1px solid var(--paper-line); }
+  @media (max-width:640px){ .service-group{ grid-template-columns:60px 1fr; gap:1.2rem; } }
+  .service-group .icon-wrap{ width:64px; height:64px; }
+  .service-group h2{ margin-bottom:0.6rem; }
+  .service-group .lede{ margin-bottom:0.9rem; }
+
+  .process-note{ border-left:3px solid var(--rattan); padding-left:1.5rem; margin-top:1.5rem; max-width:60ch; }
+
+  footer.site-footer{ background:var(--charcoal); color:var(--ivory); padding-block:3.5rem 2rem; }
+  footer.site-footer a{ color:var(--ivory); text-decoration:none; }
+  footer.site-footer a:hover{ text-decoration:underline; }
+  .footer-grid{ display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:2.5rem; }
+  @media (max-width:700px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  .footer-grid h3{ color:var(--rattan-soft); font-size:0.95rem; font-family:'Archivo',sans-serif; text-transform:uppercase; letter-spacing:0.1em; font-weight:700; margin-bottom:0.9rem; }
+  .footer-grid p, .footer-grid li{ color:#D8D0BC; font-size:0.95rem; }
+  .footer-grid ul{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.5rem; }
+  .footer-bottom{ margin-top:2.75rem; padding-top:1.5rem; border-top:1px solid rgba(243,238,227,0.15); font-size:0.85rem; color:#B9AE8E; display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.6rem; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Tedford <span>Fabrication</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-phone" href="tel:+16132178217">613-217-8217</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-header">
+    <div class="wrap">
+      <span class="eyebrow">Services</span>
+      <h1 style="margin-top:0.75rem;">Four crafts, one set of hands</h1>
+      <p class="lede" style="margin-top:1.1rem;">Carrie Tedford personally handles every stage of every job — quoting, sourcing materials, and finishing the work herself. These are the confirmed services Tedford Fabrication offers, grouped the way the work actually happens.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="service-group" id="weaving">
+        <div class="icon-wrap"><svg viewBox="0 0 48 48"><g class="ic-line"><path d="M6 12l36 24M6 36l36-24M6 20l36 8M6 28l36-8"/></g></svg></div>
+        <div>
+          <h2>Rattan &amp; Hand Weaving</h2>
+          <p class="lede">Traditional hand weaving for cane and rattan seating, repaired strand by strand.</p>
+          <ul class="plain">
+            <li>Hand weaving of rattan and cane seats</li>
+            <li>Wicker and rattan furniture repair</li>
+            <li>Custom home decor pieces made from natural rattan, using new and reclaimed materials</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-group" id="restoration">
+        <div class="icon-wrap"><svg viewBox="0 0 48 48"><g class="ic-line"><path d="M14 8h20v14l-4 18H18l-4-18V8Z"/><path d="M10 8h28"/><path d="M18 22h12"/></g></svg></div>
+        <div>
+          <h2>Furniture Restoration &amp; Refinishing</h2>
+          <p class="lede">Bringing worn or damaged furniture back, rather than replacing it.</p>
+          <ul class="plain">
+            <li>Restoration of furniture in wood or metal</li>
+            <li>Refinishing and repair work focused on reviving existing pieces</li>
+            <li>Spray finishing of wood and metal furniture</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-group" id="decorating">
+        <div class="icon-wrap"><svg viewBox="0 0 48 48"><g class="ic-line"><path d="M10 38 30 18a4 4 0 0 1 6 6L16 44"/><path d="M27 21l6 6"/><circle cx="12" cy="41" r="2.5"/></g></svg></div>
+        <div>
+          <h2>Decorating, Painting &amp; Home Decor</h2>
+          <p class="lede">Interior finishing and decor styling, informed by a visual arts background.</p>
+          <ul class="plain">
+            <li>Interior painting and finishing of drywall, wood, and metal surfaces</li>
+            <li>Interior decorating consultations and home decor styling</li>
+            <li>Decorative and mural painting, drawing on experience that spans canvas painting to large-scale theatre scenery</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-group" id="metal">
+        <div class="icon-wrap"><svg viewBox="0 0 48 48"><g class="ic-line"><path d="M6 16h36"/><path d="M12 16v22M20 16v22M28 16v22M36 16v22"/></g></svg></div>
+        <div>
+          <h2>Metal Railings &amp; Repairs</h2>
+          <p class="lede">Keeping metal railings and hardware sound and finished.</p>
+          <ul class="plain">
+            <li>Repair of metal railings and hardware</li>
+            <li>Spray finishing of metal railings and fixtures to match or refresh an existing finish</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark">
+    <div class="wrap">
+      <span class="eyebrow">Not sure which category fits?</span>
+      <h2 style="margin-top:0.75rem; max-width:26ch;">Most projects touch more than one of these</h2>
+      <div class="process-note">
+        <p>A restored chair often needs a new woven seat and a fresh finish. A railing repair might lead into a repaint. Describe the project as you see it — Carrie will sort out the rest.</p>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="contact.html#inquiry-form">Discuss Your Project</a>
+        <a class="btn btn-outline" style="border-color:var(--ivory); color:var(--ivory);" href="tel:+16132178217">Call 613-217-8217</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h3>Tedford Fabrication</h3>
+      <p>175 Oak Street<br>Gananoque, ON K7G 2R3<br>Contact address — by appointment only.</p>
+    </div>
+    <div>
+      <h3>Get in touch</h3>
+      <ul>
+        <li><a href="tel:+16132178217">613-217-8217</a></li>
+        <li><a href="mailto:tedfordfabrication@gmail.com">tedfordfabrication@gmail.com</a></li>
+        <li><a href="https://www.facebook.com/TedfordFab/">Facebook</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Site</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Tedford Fabrication</span>
+    <span>Gananoque, Ontario</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
