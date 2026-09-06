@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /d2-roofing/
+Disallow: /ron-nowell-construction/
